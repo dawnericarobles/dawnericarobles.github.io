@@ -1,0 +1,656 @@
+/*
+  Project Name: Puppy World
+  Client: GA Front-End Development Final Project
+  Author: Dawn E Robles
+  Developer @GA in DTLA
+*/
+
+/* Box Model */
+*, *:before, *:after {
+     -moz-box-sizing: inherit; /* Firexfox */
+     -webkit-box-sizing: inherit; /* Safari/Chrome/iOS/Android */
+     box-sizing: inherit; /* IE */
+}
+
+.clearfix {
+  *zoom: 1;
+}
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+.clearfix:after {
+  clear: both;
+}
+
+.alignLeft {
+  float: left;
+}
+
+.alignRight {
+  float: right;
+}
+
+.spacer {
+  height: 20em; /* almost same as the header*/
+}
+
+.spacer-sml {
+  height: 8em; /* for conf */
+}
+
+.shadow {
+  -webkit-box-shadow: 0 0.043em 0.87em #444;  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+  -moz-box-shadow:    0 0.043em 0.87em #444;  /* Firefox 3.5 - 3.6 */
+  box-shadow:         0 0.043em 0.87em #444;  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
+}
+
+#blankx {
+  display: none;
+}
+
+body {
+  font-family: 'Bubblegum Sans', cursive;
+  font-size: 23px;
+  line-height: 1.043em;
+  color: #fff;
+  background-color: #437C5B;
+  min-width: 14em;
+  max-width: 1250px;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-transform: uppercase;
+ }
+
+h1, h2 {
+  margin: 0.5em 0;
+  color: #F2C509;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.logo {
+  font-size: 1.85em;
+  font-weight: 800;
+}
+
+
+/* ~header layout~ */
+header {
+  top: 0;
+  left: 0;
+  z-index: 10;
+  width: 100%;
+  height: 14%;
+  position: fixed;
+  background-color: #185E35;
+  box-shadow: 0 0.043em 0.87em #444;
+  border-bottom: 0.17em;
+  padding: 0.25em;
+  margin: 0 auto 0.20em;
+  display: block;
+  /*overflow: hidden;*/
+}
+
+header .logo {
+  font-family: 'Gochi Hand', cursive;
+  font-size: 1.35em;
+  font-weight:800;
+  color: #F2C509;
+  float: left;
+}
+
+header #imgLogo {
+  width: auto;
+  height: 3.48em;
+  float: left;
+  padding: 0.68em;
+}
+
+header nav {
+  float: right;
+  margin: 0.58em 3em 0;
+}
+
+header nav ul li {
+  display: inline-block;
+  margin: 0 0 0 1.54em;
+  font-size: 0.92em;
+}
+
+header nav ul li a {
+  color: #F2C509;
+}
+
+#index-Page {
+  display: block;
+  margin: 1em auto;
+  padding-top: 1em;
+  vertical-align: top;  
+  height: 500px;
+}
+
+iframe {
+  border: none;
+  overflow: hidden;
+  max-height: 380px;
+  vertical-align: top;
+  border-radius: 3em;
+  padding: 0.025em;
+}
+
+.imgDisplay {
+  display: block;
+}
+
+.imgHidden {
+  display: none;
+}
+
+.footnote {
+  font-size: 0.7em;
+  color: #E7A52E;
+  margin-top: 0.4em;
+
+}
+
+select {
+  overflow: hidden;
+  padding:0.14em;
+  border-radius: 0.87em;
+  cursor:pointer;
+}
+
+select > option {
+   background: black;
+   color: #FF418E;
+   padding-left: 0.2em;
+}
+
+select > option:first-child {
+  font-size: small;
+}
+
+
+.solid-border {
+  border-radius: 0.88em;
+  border: 0.045em solid #8EB09C;
+  padding: 0 1.25em 0.75em;
+  background: #55896B;
+  margin: 0 0.5em;
+}
+
+#videos, #breeds, #contact {
+  padding-top: 6em;
+  display: none;
+}
+
+#about {
+  padding-top: 4.5em;
+  padding-bottom: 4em;
+  display: none;
+}
+
+#breeds img {
+  float: right;
+  margin: 0.75em;
+  max-width: 350px;
+  border-radius: 0.43em;
+  position: relative;
+}
+
+.vleft {
+  width: 40%;
+  display: inline-block;
+  vertical-align: top;
+  margin-left: 1em;
+}
+
+.vright {
+  width: 50%;
+  display: inline-block;
+  margin-right: 0.77em;
+  margin-left: 1.53em;
+  vertical-align: top;
+}
+
+form {
+  width: 75%;
+  marin: 0.2em auto;
+}
+
+label {
+  display: block;
+  margin: 0.21em; 
+}
+
+input[type] {
+  margin: 0.13em 10px;
+  width: 75%;
+  outline: none;
+  border-radius: 0.75em;
+  padding: 0.13em;
+  padding: 0.20em;
+  display: block;
+  font-family: 'Bubblegum Sans', cursive;
+  font-size: 21px;
+}
+
+input[type]:focus {
+  font-style: italic;
+  border: 2px solid pink;
+}
+
+fieldset {
+  margin: 1em 0;
+  max-width: 80%;
+}
+
+input[type=text], input[type=email] {
+  padding: 0.25em 0.5em; 
+}
+
+input[type=radio] {
+  display: none;
+  width: 150px;
+}
+
+input[type=radio] + label:before {
+  content:"";
+  display: inline-block; 
+  width: 22px;
+  height: 22px;
+  margin-right: 8px;
+  background: #ccc;
+  border-radius: 30px;
+/*   box-shadow: 3px 5px 6px black; */
+}
+
+input[type=radio]:checked + label:before {
+  content:"\27B2";
+  background:green;
+  text-align: center;
+  font-size: 26px;
+  line-height: 24px;
+  color: white;
+  box-shadow: 3px 4px 6px black;
+}
+
+#txtOther {
+  margin-left: 1.1em;
+  display: none;
+}
+
+
+form .vleft {
+  width: 70%;
+}
+
+form .vright {
+  width: 20%;
+}
+
+form .vright img {
+  margin: 0.75em auto;
+  display: block;
+  border-radius: 1.5em;
+  max-width: 7.5em;
+  max-height: 4.3em;
+  border: 0;
+}
+
+section#confirmation a {
+  text-decoration: none;
+  color: #F2C509;
+}
+
+section#breeds p {
+  line-height: 1.35em;
+}
+
+section#breeds p span {
+  text-decoration: underline;
+}
+
+
+
+
+/****** FOR IMAGE SLIDE SHOW ******/ 
+.css-carousel {
+   overflow: hidden;
+   padding: 0 3em;
+   margin: 4.5em auto 1em;
+   display: block;
+ }
+ 
+.css-carousel .css-img {
+   display: block;
+   margin: 0 auto;
+   border-radius: 0.5em;
+   width: 75%;
+   height: 65%;
+   position: absolute;
+   opacity:0;
+   -webkit-animation-name: css-animation-fade;
+   -webkit-animation-duration:12s;
+   -webkit-animation-iteration-count: infinite;
+   -moz-animation-name: css-animation-fade;
+   -moz-animation-duration:12s;
+   -moz-animation-iteration-count: infinite;
+   animation-name: css-animation-fade;
+   animation-duration:12s;
+   animation-iteration-count: infinite;
+   box-shadow: 0 0.043em 0.87em #444;
+  }
+ 
+ .css-carousel .css-img:nth-child(1) {
+    -webkit-animation-delay: 2s;
+    -moz-animation-delay: 2s;
+    animation-delay: 2s;
+  }
+
+.css-carousel .css-img:nth-child(2) {
+    -webkit-animation-delay: 4s;
+    -moz-animation-delay: 4s;
+    animation-delay: 4s;
+  }
+ 
+.css-carousel .css-img:nth-child(3) {
+    -webkit-animation-delay: 7s;
+    -moz-animation-delay: 7s;
+    animation-delay: 7s;
+  }
+  
+.css-carousel .css-img:nth-child(4) {
+    -webkit-animation-delay: 9s;
+    -moz-animation-delay: 9s;
+    animation-delay: 9s;
+  }
+  
+.css-carousel .css-img:nth-child(5) {
+    -webkit-animation-delay: 12s;
+    -moz-animation-delay: 12s;
+    animation-delay: 12s;
+  }
+  
+ /* Chrome, Safari, Opera */ 
+ @-webkit-keyframes css-animation-fade {
+   from { opacity: 0; } 
+   5% { opacity: 1; } 
+   15% { opacity: 1; } 
+   20% { opacity: 0; } 
+   to { opacity: 0; } 
+  }
+
+/* mozilla */ 
+ @-moz-keyframes css-animation-fade {
+   from { opacity: 0; } 
+   5% { opacity: 1; } 
+   15% { opacity: 1; } 
+   20% { opacity: 0; } 
+   to { opacity: 0; } 
+  }
+
+/*standard*/
+ @keyframes css-animation-fade {
+   from { opacity: 0; } 
+   5% { opacity: 1; } 
+   15% { opacity: 1; } 
+   20% { opacity: 0; } 
+   to { opacity: 0; } 
+  }
+
+
+
+/****** ~footer layout~ ******/
+footer {
+  bottom: 0;
+  left: 0;
+  z-index: 10;
+  width: 100%;
+  height: 8%;
+  position: fixed;
+  background-color: #185E35;
+  box-shadow: 0px 0.045em 0.87em #444;
+  border-top: 0.18em solid #EC0786;
+  text-align: center;
+  font-size: 0.6em;
+  padding-bottom: 0.25em;
+}
+
+footer p {
+  margin: 0.2em auto;
+}
+
+
+/****** diff screen ******/
+@media screen and (max-width: 848px) {
+  html { width: 100%; }
+
+  body{
+    font-size: 22px;
+    line-height: 1.25em;
+  }
+
+  form {
+    width: 100%;
+    marin: 0.2em auto;
+  }
+
+  .vleft {
+    width: 90%;
+    float: none;
+    display: inline-block;
+  }
+
+  .vright {
+    width: 90%;
+    float: none;
+  }
+
+  form .vright img {
+    display: inline-block;
+    padding: 2em 0.5em;
+    margin: 0.25em auto;
+    border-radius: 2.5em;
+    max-width: 5.5em;
+    max-height: 3em;
+    border: 0;
+  }
+
+  .css-carousel .css-img {
+    max-height: 55%;
+  }
+
+  footer {
+    width: 100%;
+    height: 80px;
+    margin: 0;
+    padding: 0;
+    position: inherit;
+    background-color: #185E35;
+    box-shadow: 0px 0.045em 0.87em #444;
+    border-top: 0.18em solid #EC0786;
+    text-align: center;
+    font-size: 0.6em;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  html { width: 100%; }
+
+  body{
+    font-size: 23px;
+    line-height: 1.25em;
+  }
+
+  header nav ul li {
+    margin: 0 0.75em 0 1.54em;
+  }
+
+  .line {
+    font-size: 1em;
+    border:1px solid #f9e42e;
+    background: #f9e42e;
+    height:3px;
+    margin-top:.25em;
+    margin-right:.5em;
+    margin-right:.5em;
+    width: 2.25em;
+  }
+
+  header {
+    width: 100%;
+    height: auto;
+    position: fixed;
+    background-color: #185E35;
+    box-shadow: 0 0.043em 0.87em #444;
+    border-bottom: 0.17em;
+    padding: 0.25em;
+    margin: 0 auto 0.20em;
+    display: block;
+    overflow: hidden;
+  }
+
+  header #imgLogo {
+    max-height: 3em;
+  }
+
+  header h1 {
+    font-size: 1.15em;
+  }
+
+  header ul {
+    transition: all 1s;
+    height:0em;
+  }
+
+  header nav {
+    width: 100%;
+    margin: 0;
+    float: none;
+    background-color: #185E35;
+    font-size: 0.75em;
+  }
+
+  .slide {
+    height: 17em;
+    background-color: #185E35;
+  }
+
+  #hdrNav a {
+    display: block;
+    font-weight: 600;
+    font-size:1.2em;
+    padding: 0.15em .75em;
+    margin-top: 0.5em;
+  }
+
+  #hdrNav li:not(:first-child) {
+    float: none;
+    width: 90%;
+  }
+
+  #hdrNav li:first-child {
+    display:block;
+    position:absolute;
+    top:0.4em;
+    right:0.25em;
+  }
+
+  .css-carousel {
+    display: none;
+  }
+
+  section#breeds img {
+    width: 90%;
+    height: 80%;
+  }
+
+  #imgHolder{
+    width: 90%;
+    margin: 1em auto;
+  }
+
+  form .vright {
+    float: none;
+    display: inline-block;
+    width: 70%;
+    align-content: center;
+  }
+
+  form .vright img {
+    display: inline;
+    padding: 1px;
+    float: left;
+    margin-top: 0.25em;
+    border-radius: 2.25em;
+    max-width: 5.25em;
+    max-height: 3em;
+    border: 1px solid #185E35;
+  }
+
+  footer {
+    width: 100%;
+    height: auto;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    bottom: 0;
+    background-color: #185E35;
+    box-shadow: 0px 0.045em 0.87em #444;
+    border-top: 0.18em solid #EC0786;
+    text-align: center;
+    font-size: 0.6em;
+  }
+
+  .vleft {
+    width: 90%;
+    float: none;
+    display: inline-block;
+  }
+
+  .vright {
+    width: 90%;
+    float: none;
+  }
+
+  select {
+    max-width: 220px;
+  }
+
+  select > option {
+     max-width: 220px;
+     font-size: 12px;
+  }
+
+  iframe {
+    border: none;
+    overflow: hidden;
+    max-height: 380px;
+    vertical-align: top;
+    border-radius: 2em;
+    padding: 0.025em;
+  }
+
+  #index-Page, #videos, #breeds, #contact, #about {
+    height: inherit;
+    font-size: 18px;
+  }
+
+  #imgDog {
+    max-width: 300px;
+  }
+
+}
+

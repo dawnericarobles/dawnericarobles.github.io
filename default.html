@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width" initial-scale="1.0">
+	<title>Puppy World</title>
+
+	<link href='https://fonts.googleapis.com/css?family=Gochi+Hand|Fontdiner+Swanky|Bubblegum+Sans' rel='stylesheet' type='text/css'>
+
+	<script type="text/javascript" src="js/jquery-2.2.4.js"></script>
+
+	<!-- external CSS link -->
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+	<header>
+	  <div class="container">
+	    <a href="default.html">
+ 			<img id="imgLogo" src="images/puppy-world.png" border="0" alt="Puppy World"></a>
+		<h1 class="logo">Puppy World</h1>
+		<nav>
+			<ul id="hdrNav">
+				<li id="Ltoggle">
+					<div class="line"></div>
+					<div class="line"></div>
+					<div class="line"></div>
+					<div class="line"></div>
+				</li>
+				<li><a href="#videos" id="aVideos">Videos</a></li>
+				<li><a href="#breeds" id="aBreeds">Breeds</a></li>
+				<li><a href="#contact" id="aContact">Contact</a></li>
+				<li><a href="#about" id="aAbout">About</a></li>
+			</ul>
+		</nav>
+	  </div>
+	</header>
+
+
+	<!-- <div class="container"> -->
+	<div id="index-Page">
+	  	<div class="css-carousel">
+	  	  <img src="images/bg.png" class="css-img">
+		  <img src="images/breeds/alaskan-malamute-2.jpg" class="css-img">
+		  <img src="images/breeds/Siberian-Husky-1.png" class="css-img">
+		  <img src="images/breeds/puppies.jpg" class="css-img">
+		  <img src="images/breeds/Bulldog-2.jpg" class="css-img">
+		  <img src="images/breeds/Golden-Retriever-1.jpg" class="css-img">
+		</div>
+
+		<img src="images/bg.png" id="imgHolder" class="imgHidden">
+	</div> <!-- index-Page -->
+
+	<div class="spacer" id="blankx"></div>
+		
+	<section id="videos">
+	 <div class="solid-border shadow">
+		<h2>Videos~ </h2>
+		<div class="vleft">
+			<select id="ddVideos">
+				<option value="0">Funny videos...</option>
+			</select>
+		</div>
+
+		<div id="middle" class="vright">
+			<iframe src="#" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true" visible="false" class="imgHidden" id="vid1"></iframe>
+		</div>
+	 </div>	
+	</section>
+
+
+		<section id="breeds">
+		 <div class="solid-border shadow">
+			<h2>Breeds~ </h2>
+			<select id="dog-type">
+				<option value="0">Select a Breed</option>
+			</select>
+			<br>
+
+			<article>
+				<p id="p1">It's likely no surprise to dog owners, but growing research suggests that man's best friend often acts more human than canine.</p>
+				<img src="images/bg.png" alt="dog" id="imgDog" class="shadow">
+				<p id="p2">Dogs can read facial expressions, communicate jealousy, display empathy, and even watch TV, studies have shown. They've picked up these people&ndash;like traits during their evolution from wolves to domesticated pets, which occurred between 11,000 and 16,000 years ago, experts say.
+				<br><br>In particular, "paying attention to us, getting along with us, [and] tolerating us" has led to particular characteristics that often mirror ours, says Laurie Santos, director of the Yale Comparative Cognition Laboratory.</p>
+			</article>
+
+			<p class="footnote">Disclaimer: texts and images content are not owned by the developer.</p>
+		 </div>
+		</section>
+
+
+		<section id="contact">
+		 <div class="solid-border shadow">
+			<h2>Contact Us~ </h2>
+			
+			<form method="post" action="submit.html">
+			 <div class="vleft">
+				<label for="name">Name: </label>
+				<input id="name" type="text" placeholder="First / Last Name">
+				<label for="email">Email: </label>
+				<input id="email" type="email" placeholder="Email Address">
+
+				<fieldset>
+				 <legend>Gender: </legend>
+				   <input type="radio" name="rdoGender" id="Male" value="Male">
+				   <label for="Male">Male </label>
+				   <input type="radio" name="rdoGender" id="Female" value="Female"> 
+				   <label for="Female">Female </label>
+				</fieldset>
+
+				<fieldset>
+				 <legend>Select topic: </legend>
+				   <input type="radio" name="rdoBtn" id="adopt" value="adopt">
+				   <label for="adopt">Adopt a dog </label>
+
+				   <input type="radio" name="rdoBtn" id="volunteer" value="volunteer"> 
+				   <label for="volunteer">Be a volunteer </label>
+
+				   <input type="radio" name="rdoBtn" id="other" value="other">
+				   <label for="other">Other </label>
+
+				   <input type="text" placeholder="please specify" id="txtOther">
+				</fieldset>
+
+				<input type="submit" name="submit" id="submit">
+			 </div> <!-- ~end vleft~ -->
+			 <div class="vright">
+					<a href="https://secure.humanesociety.org" target="_blank"><img src="images/humaneSociety.png" alt="Humane Society"></a> 
+					<a href="http://www.laanimalservices.com/shelters/" target="_blank"><img src="images/LAanimal.png" alt="LA Animal Services"></a> 
+					<a href="https://www.petfinder.com/" target="_blank"><img src="images/petfinder.png" alt="PetFinder"></a> 
+					<a href="http://www.adoptapet.com/" target="_blank"><img src="images/adoptPet.png" alt="Adopt a Pet"></a> 
+			 </div>	
+			</form>
+
+		 </div>
+		</section>
+
+
+		<section id="about">
+		 <div class="solid-border">
+			<h2>About Us~ </h2>
+			<p>Franzen gastropub wolf, schlitz vice echo park kickstarter vegan venmo etsy you probably haven't heard of them godard leggings farm-to-table. Literally man bun single-origin coffee tilde, tousled dreamcatcher ugh chia seitan affogato PBR&B schlitz next level shabby chic YOLO. Vegan tumblr 90's, blog ramps synth art party skateboard readymade beard. Squid ennui four loko, kinfolk before they sold out truffaut typewriter 90's blog helvetica hashtag ramps vice. Sartorial ramps chicharrones occupy everyday carry, gluten-free irony keffiyeh scenester bitters try-hard franzen gastropub letterpress paleo. Marfa bushwick fashion axe cornhole keytar, cronut aesthetic sustainable mlkshk synth. Tacos deep v tousled, sartorial freegan wolf authentic scenester 3 wolf moon you probably haven't heard of them mumblecore.</p>
+			<p>Ham hock pancetta bresaola beef ribs, doner pork prosciutto sausage biltong spare ribs ball tip. Bresaola brisket sirloin leberkas, pork belly venison short loin jerky ham boudin. Cow bresaola shank biltong sausage short ribs meatball tail hamburger venison pig turkey strip steak shankle. Tongue ground round ham, pastrami turkey jowl cupim sirloin bresaola. Tongue shank tail shoulder hamburger porchetta cow. Picanha leberkas landjaeger boudin shank andouille ham hock turducken. Kevin pork meatloaf, flank porchetta hamburger ham landjaeger pork belly doner pork loin sirloin pork chop leberkas chicken.</p>
+		 </div>	
+		</section>
+
+	<!-- </div> -->
+
+	<div class="spacer" id="ftrSpace"></div>
+
+	<footer>
+		<p>&copy; Puppy world. Made with heart.<p>
+		<p>dawnericarobles</p>
+	</footer>
+
+	<script type="text/javascript" src="js/default.js"></script>
+</body>
+</html>
