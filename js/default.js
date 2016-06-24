@@ -144,7 +144,7 @@ $(window).resize(function() {
 
 	function displayInfo() {
 		var breed = $("#dog-type").val(); //get the selected val on change
-		var tempBreed = "../Final_Project/images/breeds2/puppy";
+		var tempBreed = "~/../images/breeds2/puppy";
 		tempBreed = tempBreed + breed + ".jpg";
 		var tmpDesc1 = "";
 		var tmpDesc = "";
