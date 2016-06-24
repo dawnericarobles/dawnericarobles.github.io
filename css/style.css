@@ -151,6 +151,7 @@ iframe {
 
 .imgDisplay {
   display: block;
+  box-shadow: 0 0.043em 0.87em #444; 
 }
 
 .imgHidden {
@@ -580,6 +581,7 @@ footer p {
   #imgHolder{
     width: 90%;
     margin: 1em auto;
+    border-radius: 1.1em;
   }
 
   form .vright {
